@@ -1,6 +1,17 @@
 .cuadro{
-    margin: 2rem 10px;
     font-size: 10rem;
     background-color: black;
+    color: white;
+    
+}
+
+.row{
+    margin: 0;
+}
+
+.inputs{
+    margin: 2rem 10px;
+    background-color: black;
     color: white
+
 }

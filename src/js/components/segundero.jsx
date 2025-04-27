@@ -1,21 +1,46 @@
-//create your first component
-import React, { useState, useEffect } from "react";
+// //create your first component
+// import React, { useState, useEffect } from "react";
+
+// const Segundero = (props) => {
+//     const [contador, setContador] = useState(props.inicio);
+
+//     useEffect(() => {
+//         const intervalo = setInterval(() => {
+//             setContador((valorAnterior) =>
+//                 props.tipo === "regresiva" ? valorAnterior - 1 : valorAnterior + 1
+//             );
+//         }, props.lapso);
+
+//         return () => clearInterval(intervalo);
+//     }, [props.lapso, props.tipo]);
+
+//     return (
+//         <div className="container text-center cuadro">
+//             <p>{contador}</p>
+//         </div>
+//     );
+// };
+
+// export default Segundero;
+
+import React from "react";
 
 const Segundero = (props) => {
-    const [contador, setContador] = useState(props.inicio);
-    let valorAnterior = props.inicio;
+    const { inicio, lapso } = props;
+    let contador = inicio;
 
-    useEffect(() => {
-        const intervalo = setInterval(() => {
-            setContador(valorAnterior = valorAnterior + 1);
-        }, props.lapso);
+    setInterval(() => {
 
-        return () => clearInterval(intervalo); 
-    }, []);
+            contador++;
+            const almacenParaContador = document.getElementById(`contador-${lapso}`);
+            if (almacenParaContador) almacenParaContador.innerText = contador;
+
+        
+    }, lapso);
 
     return (
         <div className="container text-center cuadro">
-            <p>{contador}</p>
+            <p id={`contador-${lapso}`}>{contador}</p>
         </div>
     );
 };

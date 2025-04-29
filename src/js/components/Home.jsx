@@ -21,6 +21,7 @@ const Home = () => {
 			<div className="col-xl-2 col-md-12"><Segundero inicio={0} lapso={60000}  /></div>
 			<div className="col-xl-2 col-md-12"><Segundero inicio={0} lapso={1000}  /></div>
 
+			{/* Comento esto porque use los hooks
 			<div className="inputs col-12">
 			<div className="input-group">
 				<select className="custom-select" id="selector">
@@ -33,7 +34,7 @@ const Home = () => {
 				</div>
 				<input type="text" className="form-control" placeholder="Elige un numero de inicio" id="numeroInicio"/>
 			</div>
-		</div>
+		</div> */}
 		</div>
 	);
 };

@@ -15,10 +15,10 @@ const Home = () => {
 				</div>
 			</div>
 
-			<div className="col-xl-2 col-md-12"><Segundero inicio={0} lapso={168000000}  /></div>
-			<div className="col-xl-2 col-md-12"><Segundero inicio={0} lapso={24000000}  /></div>
-			<div className="col-xl-2 col-md-12"><Segundero inicio={0} lapso={6000000}  /></div>
-			<div className="col-xl-2 col-md-12"><Segundero inicio={0} lapso={60000}  /></div>
+			<div className="col-xl-2 col-md-12"><Segundero inicio={0} lapso={10000000}  /></div>
+			<div className="col-xl-2 col-md-12"><Segundero inicio={0} lapso={1000000}  /></div>
+			<div className="col-xl-2 col-md-12"><Segundero inicio={0} lapso={100000}  /></div>
+			<div className="col-xl-2 col-md-12"><Segundero inicio={0} lapso={10000}  /></div>
 			<div className="col-xl-2 col-md-12"><Segundero inicio={0} lapso={1000}  /></div>
 
 			{/* Comento esto porque use los hooks

@@ -30,14 +30,14 @@ const Segundero = (props) => {
     let contador = inicio;
 
     setInterval(() => {
-
+       
             contador++;
             const almacenParaContador = document.getElementById(`contador-${lapso}`);
-            if (almacenParaContador) almacenParaContador.innerText = contador;
+            if (almacenParaContador) almacenParaContador.innerText = contador%10;
 
-        
     }, lapso);
-
+    
+    
     return (
         <div className="container text-center cuadro">
             <p id={`contador-${lapso}`}>{contador}</p>
